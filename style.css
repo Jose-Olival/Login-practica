@@ -32,14 +32,30 @@ main {
 
 .form-wrapper form {
     background: #fff;
+    padding: 2rem;
+
 }
 
 .form__fields {
     display: flex;
     flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    align-items: center;
+    gap: clamp(8px,.5em,16px) 0;
 }
 
 .form__field {
     display: flex;
     flex-direction: column;
+    grid-column: span 2;
+}
+
+.form__fields input[type="submit"] {
+    grid-column: span 2;
+}
+
+.form__field span {
+    grid-column: span 2;
 }
