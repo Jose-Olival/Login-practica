@@ -24,6 +24,7 @@ main {
 }
 
 .form-wrapper {
+    position: relative;
     width: 100%;
     height: 100%;
     display: grid;
@@ -32,8 +33,13 @@ main {
 
 .form-wrapper form {
     background: #fff;
-    padding: 2rem;
+    padding: 0 2rem 4rem;
+    font-size: clamp(1rem,2dvw,3rem);
+}
 
+form h2{
+    margin-bottom: 4rem;
+    text-align: center;
 }
 
 .form__fields {
@@ -52,10 +58,15 @@ main {
     grid-column: span 2;
 }
 
+.form__field input {
+    line-height: 2em;
+}
+
 .form__fields input[type="submit"] {
     grid-column: span 2;
 }
 
-.form__field span {
+.form__fields span {
     grid-column: span 2;
+    text-align: center;
 }
