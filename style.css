@@ -1,3 +1,9 @@
+:root {
+    --neutral--100: #ececec;
+    --neutral--500: #c5c4c0;
+    --neutral--900: #2c2e2b; 
+}
+
 * {
     margin: 0;
     padding: 0;
