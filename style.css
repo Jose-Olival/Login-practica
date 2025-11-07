@@ -33,12 +33,13 @@ main {
 
 .form-wrapper form {
     background: #fff;
-    padding: 0 2rem 4rem;
+    padding: 0 4dvw 8dvw;
     font-size: clamp(1rem,2dvw,3rem);
+    border-radius: 2dvw;
 }
 
 form h2{
-    margin-bottom: 4rem;
+    margin-bottom: 3.5em; 
     text-align: center;
 }
 
