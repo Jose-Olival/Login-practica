@@ -59,13 +59,32 @@ form h2{
 }
 
 .form__field {
+    padding: .5em 1em;
+    border: .15em solid var(--neutral--100);
+    border-radius: 2em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     grid-column: span 2;
+    color: var(--neutral--100);
 }
 
 .form__field input {
-    line-height: 2em;
+    background-color: transparent;
+    font-size: 1em;
+    padding: .2em 0;
+    border: 0;
+    outline: none;
+    color: inherit;
+}
+
+.form__field input::placeholder{
+    color: var(--neutral--100);
+}
+
+.form__field input:focus::placeholder{
+    color: transparent;
 }
 
 .form__fields input[type="submit"] {
