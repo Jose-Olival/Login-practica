@@ -29,8 +29,8 @@ main {
 
 .form-wrapper form {
     position: relative;
-    padding: 0 4dvw 8dvw;
-    font-size: clamp(1rem,2dvw,3rem);
+    padding: 0 clamp(2rem,4.4dvw,3rem) clamp(4rem,8.8dvw,6rem);
+    font-size: clamp(1rem,2.2dvw,1.5rem);
     border-radius: 2dvw;
     border: 3px solid #fff;
     backdrop-filter: blur(15px);
@@ -49,7 +49,7 @@ form h2{
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 1fr;
     align-items: center;
-    gap: clamp(8px,.5em,16px) 0;
+    gap: clamp(.5rem, .5em, 1rem) clamp(2.5rem, 5em, 5rem);
 }
 
 .form__field {
