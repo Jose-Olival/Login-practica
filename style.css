@@ -38,7 +38,7 @@ main {
     padding: 0 clamp(2rem,4.4dvw,3rem) clamp(4rem,8.8dvw,6rem);
     font-size: clamp(1rem,2.2dvw,1.5rem);
     border-radius: 2dvw;
-    border: 3px solid #fff;
+    border: .25em solid var(--neutral--500);
     backdrop-filter: blur(15px);
 }
 
