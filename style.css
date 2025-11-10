@@ -143,6 +143,39 @@ form h2::after {
     color: transparent;
 }
 
+
+input[type="checkbox"] {
+    visibility: hidden
+}
+
+.form__remember-me {
+    position: relative;
+    display: flex;
+    padding-left: .5em;
+}
+
+.form__remember-me::before {
+    content: '';
+    display: block;
+    height: 1em;
+    width: 1em;
+    background-color: var(--neutral--100);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.form__remember-me:has(input:checked)::after {
+    position: absolute;
+    top: .25em;
+    left: .75em;
+    content: '';
+    display: block;
+    height: .5em;
+    width: .5em;
+    background-color: var(--neutral--900);
+    border-radius: 50%;
+}
+
 .form__fields input[type="submit"] {
     padding: 1em;
     border: 0;
