@@ -53,7 +53,7 @@ form h2{
     width: fit-content;
     padding: 1em;
     border-radius: 0 0 1em 1em;
-    margin-bottom: 3.5em; 
+    margin-bottom: 2.5em; 
     background-color: var(--neutral--500);
     color: var(--neutral--900);
 }
@@ -91,6 +91,7 @@ form h2::after {
 }
 
 .form__field {
+    position: relative;
     padding: .5em 1em;
     border: .15em solid var(--neutral--100);
     border-radius: 2em;
@@ -100,6 +101,28 @@ form h2::after {
     align-items: center;
     grid-column: span 2;
     color: var(--neutral--100);
+}
+
+.form__field:first-child {
+    margin-bottom: 1em;
+}
+
+.form__field:has(input:focus)::before {
+    position: absolute;
+    top: -30%;
+    padding: .1em .5em;
+    border-radius: 1em;
+    color: var(--neutral--900);
+    background-color: var(--neutral--500);
+
+}
+
+.form__field:first-child:has(input:focus)::before {
+    content: 'username';
+}
+
+.form__field:nth-child(2):has(input:focus)::before {
+    content: 'password';
 }
 
 .form__field input {
