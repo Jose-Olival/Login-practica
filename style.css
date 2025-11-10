@@ -37,7 +37,7 @@ main {
 
 .form-wrapper form {
     position: relative;
-    padding: 0 clamp(2rem,4.4dvw,3rem) clamp(4rem,8.8dvw,6rem);
+    padding: 0 clamp(2rem,4.4dvw,3rem) clamp(2rem,4.4dvw,3rem);
     font-size: clamp(1rem,2.2dvw,1.5rem);
     border-radius: 2dvw;
     border: .25em solid var(--neutral--500);
@@ -53,7 +53,7 @@ form h2{
     width: fit-content;
     padding: 1em;
     border-radius: 0 0 1em 1em;
-    margin-bottom: 2.5em; 
+    margin-bottom: 2em; 
     background-color: var(--neutral--500);
     color: var(--neutral--900);
 }
@@ -155,4 +155,10 @@ form h2::after {
 .form__fields span {
     grid-column: span 2;
     text-align: center;
+}
+
+.form__fields a {
+    font-weight: bold;
+    color: var(--neutral--100);
+    text-decoration: none;
 }
