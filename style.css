@@ -143,6 +143,12 @@ form h2::after {
 }
 
 .form__fields input[type="submit"] {
+    padding: 1em;
+    border: 0;
+    border-radius: 2em;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: var(--neutral--100);
     grid-column: span 2;
 }
 
