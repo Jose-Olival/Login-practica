@@ -25,6 +25,8 @@ main {
     overflow: hidden;
     background-image: url("images/bg.jpg");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .form-wrapper {
@@ -38,7 +40,7 @@ main {
 .form-wrapper form {
     position: relative;
     padding: 0 clamp(2rem,4.4dvw,3rem) clamp(2rem,4.4dvw,3rem);
-    font-size: clamp(1rem,2.2dvw,1.5rem);
+    font-size: clamp(1rem,2.2dvw,1.25rem);
     border-radius: 2dvw;
     border: .25em solid var(--neutral--500);
     backdrop-filter: blur(15px);
